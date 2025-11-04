@@ -1,0 +1,9 @@
+{
+  "name": "Weekly Report Workflow",
+  "nodes": [
+    { "name": "Google Drive Trigger", "type": "trigger" },
+    { "name": "Read CSV", "type": "fileReader" },
+    { "name": "Claude Analysis", "type": "aiCall" },
+    { "name": "Create Report", "type": "docWriter" }
+  ]
+}
