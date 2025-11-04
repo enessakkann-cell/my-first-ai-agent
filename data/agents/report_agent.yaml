@@ -1,0 +1,7 @@
+name: weekly_report_agent
+description: Analyzes weekly textile production data and creates a summary report.
+trigger: when_new_file_added_to_data_folder
+steps:
+  - read_csv: "data/sample_input.csv"
+  - analyze_data_with_llm: "Summarize production performance and find efficiency issues"
+  - generate_report: "docs/weekly_report.md"
